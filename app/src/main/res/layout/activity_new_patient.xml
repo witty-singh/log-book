@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#30111E"
+    tools:context=".new_patient">
+
+
+    <EditText
+        android:id="@+id/date"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="175dp"
+        android:layout_marginLeft="175dp"
+        android:layout_marginTop="54dp"
+        android:layout_marginBottom="44dp"
+        android:background="#E674AE7E"
+        android:ems="10"
+        android:hint="DATE"
+        android:inputType="date"
+        android:textColor="#30111E"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="148dp"
+        android:background="#E6D1D1D1"
+        android:ems="10"
+        android:hint="NAME"
+        android:inputType="textPersonName"
+        android:paddingLeft="5dp"
+        android:textColor="#30111E"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/charges"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:background="#E674AE7E"
+        android:ems="10"
+        android:hint="@string/charges"
+        android:inputType="number"
+        android:textColor="#30111E"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.948"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/medi"
+        app:layout_constraintVertical_bias="0.044" />
+
+    <EditText
+        android:id="@+id/medi"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="64dp"
+        android:background="#E6D1D1D1"
+        android:ems="10"
+        android:hint="MEDICINE"
+        android:inputType="textPersonName"
+        android:paddingLeft="5dp"
+        android:textColor="#30111E"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/symp"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/symp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="64dp"
+        android:background="#E6D1D1D1"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:hint="SYMPTOM"
+        android:inputType="textMultiLine"
+        android:paddingLeft="5dp"
+        android:textColor="#30111E"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <EditText
+        android:id="@+id/age"
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginBottom="64dp"
+        android:background="#E674AE7E"
+        android:ems="10"
+        android:hint="AGE"
+        android:inputType="text"
+        android:textColor="#30111E"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/symp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/date"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
